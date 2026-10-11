@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Con JavaScript</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h2>ECMAScript y JavaScript</h2>
+
+  <!-- Botones de las pestañas: el atributo data-panel dice qué panel abre cada uno -->
+  <div class="pestanas">
+    <button class="activa" data-panel="p1">ECMAScript</button>
+    <button data-panel="p2">JavaScript</button>
+    <button data-panel="p3">Motor</button>
+    <button data-panel="p4">Versiones</button>
+  </div>
+
+  <!-- Paneles: solo uno se ve a la vez (lo controla script.js) -->
+  <div id="p1" class="panel visible tarjeta">
+    <b>ECMAScript:</b> es el estándar (las reglas) que define cómo debe funcionar el lenguaje. Lo publica ECMA International.
+  </div>
+  <div id="p2" class="panel tarjeta">
+    <b>JavaScript:</b> es la implementación de ese estándar que usan los navegadores.
+  </div>
+  <div id="p3" class="panel tarjeta">
+    <b>Motor:</b> el navegador tiene un motor (ej. V8 en Chrome) que lee y ejecuta el código.
+  </div>
+  <div id="p4" class="panel tarjeta">
+    <b>Versiones:</b> ES6 (2015) agregó <code>let</code>, <code>const</code> y funciones flecha.
+  </div>
+
+  <!-- Aquí se carga el JavaScript (al final para que el HTML ya exista) -->
+  <script src="script.js"></script>
+</body>
+</html>
